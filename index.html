@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realce sua Beleza Natural » Dra. Cristiane Naisa</title>
+  <meta name="description" content="Sua pele firme e jovem sem cirurgia. Dra. Cristiane Naisa é Especialista em Estética Regenerativa em BH." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- DEFINIÇÃO GLOBAL DE GRADIENTES SVG (Evita o bug de display: none dos navegadores) -->
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+    <defs>
+      <linearGradient id="check-gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#e0c278" />
+        <stop offset="50%" stop-color="#C9A84C" />
+        <stop offset="100%" stop-color="#a07e30" />
+      </linearGradient>
+      <linearGradient id="check-gold-grad-shimmer" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#c9a84c">
+          <animate attributeName="stop-color" values="#c9a84c;#f0d878;#a87928;#c9a84c" dur="3s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="50%" stop-color="#f0d878">
+          <animate attributeName="stop-color" values="#f0d878;#a87928;#c9a84c;#f0d878" dur="3s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="#a87928">
+          <animate attributeName="stop-color" values="#a87928;#c9a84c;#f0d878;#a87928" dur="3s" repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+      <linearGradient id="check-green-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#34D399" />
+        <stop offset="100%" stop-color="#059669" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <!-- ======== FLOATING WHATSAPP ======== -->
+  <a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20minha%20an%C3%A1lise%20de%20pele%20gratuita." target="_blank" rel="noopener" aria-label="Fale pelo WhatsApp">
+    <img src="icone do whatsapp.png" alt="WhatsApp" style="width: 36px; height: 36px; flex-shrink: 0; object-fit: contain;" />
+    <span class="whatsapp-text">Fale no WhatsApp</span>
+  </a>
+
+  <!-- ======== HEADER ======== -->
+  <header id="header" class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="Logo Estética .png" alt="Dra. Cristiane Naisa" style="max-height: 60px; object-fit: contain;" />
+      </div>
+      <nav class="nav-cta">
+        <a id="btn-header-wpp" class="btn btn-outline" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20minha%20an%C3%A1lise%20de%20pele%20gratuita." target="_blank" rel="noopener">
+          <img src="icone do whatsapp.png" alt="WhatsApp" class="btn-wpp-icon icon-gold" />
+          Agendar no WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== SEÇÃO 1: HERO ======== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-content" data-animate="fade-up">
+        <p class="hero-eyebrow">Especialista em Estética Regenerativa em BH</p>
+        <h1 class="hero-title">Sua pele <strong>firme e jovem</strong><br /><em>sem cirurgia.</em></h1>
+        <p class="hero-subtitle">
+          <strong>Bioestimulador de colágeno</strong> com protocolo personalizado, segurança clínica e resultados visíveis desde a primeira sessão.
+        </p>
+        <div class="hero-ctas">
+          <a id="btn-hero-wpp" class="btn btn-primary btn-large" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20minha%20an%C3%A1lise%20de%20pele%20gratuita." target="_blank" rel="noopener">
+            <img src="icone do whatsapp.png" alt="WhatsApp" class="btn-wpp-icon icon-white" />
+            Quero minha análise de pele gratuita
+          </a>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 12px; font-weight: 500;">Resultados desde a 1ª sessão</p>
+      </div>
+      <div class="hero-image-wrap" data-animate="fade-left">
+        <div class="hero-image-frame">
+          <img src="imagem_sessao1.png" alt="Dra. Cristiane Naisa – Especialista em Estética Regenerativa" class="hero-img" loading="eager" />
+          <div class="hero-image-badge">
+            <div class="google-badge-header">
+              <svg class="google-logo" viewBox="0 0 24 24" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+              </svg>
+              <div class="google-stars">★ ★ ★ ★ ★</div>
+            </div>
+            <div class="google-badge-text">
+              <span class="badge-title">Clínica mais bem avaliada da região</span>
+              <span class="badge-subtitle">Excelente • 5.0 estrelas no Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FAIXA DE CREDENCIAIS ======== -->
+  <div class="cred-strip">
+    <div class="container cred-strip-inner">
+      <div class="cred-item">
+        <span class="cred-number">+200</span>
+        <span class="cred-label">pacientes atendidas</span>
+      </div>
+      <div class="cred-divider"></div>
+      <div class="cred-item">
+        <span class="cred-number">5.0</span>
+        <span class="cred-label">estrelas no Google</span>
+      </div>
+      <div class="cred-divider"></div>
+      <div class="cred-item">
+        <span class="cred-number">2022</span>
+        <span class="cred-label">atendendo desde</span>
+      </div>
+      <div class="cred-divider"></div>
+      <div class="cred-item">
+        <span class="cred-number">1ª</span>
+        <span class="cred-label">sessão com resultados</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== SEÇÃO: RESULTADOS ANTES E DEPOIS ======== -->
+  <section id="resultados-slider" class="section section-white" style="padding-top: 60px; padding-bottom: 20px; overflow: hidden;">
+    <div class="container" style="margin-bottom: 32px;" data-animate="fade-up">
+      <div class="section-header" style="margin-bottom: 0;">
+        <h2 class="section-title">A pele que você tinha.<br/><strong>O rosto que ainda é seu.</strong></h2>
+        <div class="gold-divider center"></div>
+      </div>
+    </div>
+    <div class="container" style="max-width: 100%;">
+      <div data-animate="fade-up">
+        <div class="slider-container" style="margin-top: 0;">
+          <div class="slider-track">
+            <!-- Grupo 1 -->
+            <div class="slider-group">
+              <img src="resultado01.jfif" alt="Resultado" class="slider-img" />
+              <img src="resultado02.jpg" alt="Resultado" class="slider-img" />
+              <img src="resultado03.jpg" alt="Resultado" class="slider-img" />
+              <img src="resultado04.jpg" alt="Resultado" class="slider-img" />
+              <img src="resultado05.jfif" alt="Resultado" class="slider-img" />
+              <img src="resultado06.jfif" alt="Resultado" class="slider-img" />
+              <img src="resultado07.jpg" alt="Resultado" class="slider-img" />
+            </div>
+            <!-- Grupo 2 (Cópia exata para o loop infinito) -->
+            <div class="slider-group">
+              <img src="resultado01.jfif" alt="Resultado" class="slider-img" />
+              <img src="resultado02.jpg" alt="Resultado" class="slider-img" />
+              <img src="resultado03.jpg" alt="Resultado" class="slider-img" />
+              <img src="resultado04.jpg" alt="Resultado" class="slider-img" />
+              <img src="resultado05.jfif" alt="Resultado" class="slider-img" />
+              <img src="resultado06.jfif" alt="Resultado" class="slider-img" />
+              <img src="resultado07.jpg" alt="Resultado" class="slider-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 24px;" data-animate="fade-up">
+        <p style="font-style: italic; color: var(--text-light); margin-bottom: 24px;">Resultados reais, de pacientes reais.<br/>Sem filtro. Sem edição.</p>
+        <div class="hero-ctas" style="justify-content: center; display: flex;">
+          <a id="btn-results-wpp" class="btn btn-primary btn-large" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20resgatar%20a%20minha%20melhor%20pele." target="_blank" rel="noopener">
+            <img src="icone do whatsapp.png" alt="WhatsApp" class="btn-wpp-icon icon-white" />
+            Quero resgatar a minha melhor pele
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 2: DOR ======== -->
+  <section id="dor" class="section section-white">
+    <div class="container dor-container" data-animate="fade-up">
+      <h2 class="dor-title">
+        <span class="dor-title-small">Você já olhou no espelho e pensou:</span>
+        <span class="dor-title-large">"Meu rosto não parece mais meu?"</span>
+      </h2>
+      <div class="gold-divider center"></div>
+      <p class="dor-desc">
+        A flacidez aparece aos poucos — e um dia você percebe que o contorno do rosto mudou, a pele perdeu viço e aquele brilho natural sumiu.
+      </p>
+      <p class="dor-desc">
+        Você cuida da pele, usa protetor solar, bebe água.<br/>Mas algo continua faltando.
+      </p>
+      <p class="dor-highlight">
+        Não é frescura. É colágeno.<br/>E existe um tratamento feito exatamente pra isso.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 3: SOLUÇÃO ======== -->
+  <section id="solucao" class="section section-white" style="padding-top: 60px;">
+    <div class="container" style="text-align: center; margin-bottom: 48px;" data-animate="fade-up">
+      <h2 class="section-title">
+        <span class="shimmer-gold" style="font-weight: 500;">Bioestimulador</span> de Colágeno
+      </h2>
+      <p style="font-size: 1.25rem; color: #4b5563; margin-top: 8px; font-family: var(--font-serif);">
+        O tratamento que reativa a firmeza que o tempo levou.
+      </p>
+      <div class="gold-divider center" style="margin-top: 16px; margin-bottom: 0;"></div>
+    </div>
+
+    <div class="container about-grid">
+      <div class="about-content" data-animate="fade-right">
+        <p class="about-text">
+          <strong>Esqueça o aspecto artificial.</strong> O bioestimulador <strong>não preenche</strong> e <strong>não congela</strong> as suas expressões.
+        </p>
+        <p class="about-text">
+          Ele age <strong>de dentro para fora</strong>, fazendo o seu próprio organismo voltar a <strong>produzir colágeno</strong>. O resultado? Uma <strong>pele mais firme, com contorno definido e textura renovada</strong>, que melhora mês após mês.
+        </p>
+        <ul class="about-list">
+          <li>
+            <svg class="check-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6L9 17L4 12" stroke="url(#check-gold-grad-shimmer)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <strong>Resultados 100% naturais:</strong> ninguém percebe que você "fez algo".
+          </li>
+          <li>
+            <svg class="check-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6L9 17L4 12" stroke="url(#check-gold-grad-shimmer)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <strong>Efeito duradouro:</strong> estímulo contínuo por até 2 anos.
+          </li>
+          <li>
+            <svg class="check-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6L9 17L4 12" stroke="url(#check-gold-grad-shimmer)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <strong>Sem repouso:</strong> retorne à sua rotina imediatamente.
+          </li>
+          <li>
+            <svg class="check-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6L9 17L4 12" stroke="url(#check-gold-grad-shimmer)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <strong>Protocolo exclusivo:</strong> desenhado para a anatomia do seu rosto.
+          </li>
+        </ul>
+        <div class="about-cta-wrap">
+          <a id="btn-solucao-wpp" class="btn btn-primary btn-large" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20ativar%20o%20bioestimulador%20em%20mim." target="_blank" rel="noopener">
+            <img src="icone do whatsapp.png" alt="WhatsApp" class="btn-wpp-icon icon-white" />
+            Quero ativar o bioestimulador em mim
+          </a>
+        </div>
+      </div>
+      <div class="about-image-wrap" data-animate="fade-left">
+        <div class="about-image-frame">
+          <img src="clinic_interior.png" alt="Bioestimulador de Colágeno" class="about-img" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 4: OFERTA ======== -->
+  <section id="oferta" class="section section-white">
+    <div class="container" style="max-width: 860px;" data-animate="fade-up">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <h2 class="section-title"><strong class="shimmer-gold">Oferta especial</strong> para novas pacientes</h2>
+        <div class="gold-divider center"></div>
+      </div>
+      <div style="background: var(--white); border: 2px solid var(--gold); border-radius: 16px; padding: 40px; text-align: center; box-shadow: var(--shadow-lg);">
+        <img src="presente.gif" alt="Presente Especial" style="max-width: 300px; width: 100%; height: auto; margin-bottom: 24px; border-radius: 8px; margin-inline: auto; display: block;" />
+        <h3 style="color: var(--gold-dark); margin-bottom: 24px; font-size: 1.5rem; line-height: 1.4;">Faça seu Bioestimulador de Colágeno<br/>e ganhe 1 sessão de Microagulhamento Regenerativo</h3>
+        <ul style="text-align: left; max-width: 600px; margin: 0 auto 32px auto; font-size: 1.05rem; list-style: none; padding: 0;">
+          <li style="margin-bottom: 12px; display: flex; gap: 8px;"><span>—</span> Protocolo completo de regeneração da pele</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 8px;"><span>—</span> Resultado potencializado desde a primeira sessão</li>
+          <li style="margin-bottom: 12px; display: flex; gap: 8px;"><span>—</span> Avaliação e análise de pele GRATUITA antes do procedimento</li>
+        </ul>
+        <a id="btn-oferta-wpp" class="btn btn-primary btn-large" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20oferta%20do%20Bioestimulador." target="_blank" rel="noopener" style="margin-bottom: 16px;">
+          <img src="icone do whatsapp.png" alt="WhatsApp" class="btn-wpp-icon icon-white" />
+          Quero aproveitar essa oferta
+        </a>
+        <p style="font-size: 0.85rem; color: var(--rose-mid); font-weight: 500;">Agenda com vagas limitadas por semana.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 5: AUTORIDADE ======== -->
+  <section id="autoridade" class="section section-white">
+    <div class="container about-grid">
+      <div class="about-image-wrap" data-animate="fade-right">
+        <img src="imagem_sessao5.png?v=2" alt="Dra. Cristiane Naisa" class="about-img" loading="lazy" />
+      </div>
+      <div class="about-content" data-animate="fade-left">
+        <h2 class="section-title">Você não vai entregar seu rosto pra qualquer um.<br/><strong>Nem deveria.</strong></h2>
+        <div class="gold-divider"></div>
+        <p class="about-text">
+          Sou Cristiane, enfermeira estética especialista em Estética Regenerativa.
+        </p>
+        <p class="about-text">
+          Antes de atuar na estética, passei 5 anos como auditora de qualidade assistencial em saúde — o que me tornou uma profissional obcecada com segurança, rigor técnico e cuidado real com o paciente.
+        </p>
+        <p class="about-text">
+          Hoje, cada atendimento começa com uma avaliação criteriosa. Eu explico tudo: o produto, a ação, o que vai acontecer na sua pele depois. Você não sai daqui com dúvidas.
+        </p>
+        <ul class="about-list" style="margin-top: 24px;">
+          <li><span class="check">🎓</span> Enfermeira graduada — 2007</li>
+          <li><span class="check">🎓</span> MBA em Auditoria e Gestão em Saúde</li>
+          <li><span class="check">🎓</span> Pós-graduação em Enfermagem Estética e Dermatológica</li>
+          <li><span class="check">🎓</span> Especialista em Estética Regenerativa — IBECO-SP</li>
+          <li><span class="check">🎓</span> Especialista em Skincare — SBES/MEC</li>
+          <li><span class="check">🎓</span> +200 pacientes atendidas desde 2022</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 6: PROVA SOCIAL ======== -->
+  <section id="depoimentos" class="section section-white">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <h2 class="section-title">O que as pacientes falam depois da <strong>transformação</strong></h2>
+        <div class="gold-divider center"></div>
+      </div>
+      <div data-animate="fade-up">
+        <div class="slider-container" style="margin-top: 40px;">
+          <div class="slider-track" style="animation-duration: 50s;">
+            <!-- Grupo 1 -->
+            <div class="slider-group align-stretch">
+              <div class="testimonial-card google-review">
+                <div class="card-header">
+                  <div class="stars-container">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                  <img src="icone do google.png" alt="Google" class="google-icon" />
+                </div>
+                <p class="testimonial-text google-font">"Eu fui com a perspectiva de ir somente melhorar meu rosto... Foi uma experiência de relaxamento do início ao fim. E meu rosto? Sério, ficou maravilhoso. Ameiiii o atendimento!"</p>
+                <div class="testimonial-author">
+                  <img src="priscilla ferrarezzi.png" alt="Paciente" class="testimonial-img" loading="lazy" />
+                  <div class="author-details">
+                    <p class="author-name google-font-name">Priscilla Ferrarezzi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card google-review">
+                <div class="card-header">
+                  <div class="stars-container">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                  <img src="icone do google.png" alt="Google" class="google-icon" />
+                </div>
+                <p class="testimonial-text google-font">"Uma querida. Fiz limpeza de pele e microagulhamento nos lábios. Mao super leve. Atendimento e anaminese cuidadosos, além de um mimo no final. Voltarei mais vezes, com certeza!"</p>
+                <div class="testimonial-author">
+                  <img src="Elisa Cristina.png" alt="Paciente" class="testimonial-img" loading="lazy" />
+                  <div class="author-details">
+                    <p class="author-name google-font-name">Elisa Cristina</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card google-review">
+                <div class="card-header">
+                  <div class="stars-container">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                  <img src="icone do google.png" alt="Google" class="google-icon" />
+                </div>
+                <p class="testimonial-text google-font">"Foi impecável! Muito atenciosa e competente. Entendeu exatamente o que eu desejava, executou tudo com muita maestria e profissionalismo. Eu adorei!"</p>
+                <div class="testimonial-author">
+                  <img src="Mariana Torres Franca Caldeira.png" alt="Paciente" class="testimonial-img" loading="lazy" />
+                  <div class="author-details">
+                    <p class="author-name google-font-name">Mariana Torres Franca Caldeira</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Grupo 2 (Loop Infinito) -->
+            <div class="slider-group align-stretch">
+              <div class="testimonial-card google-review">
+                <div class="card-header">
+                  <div class="stars-container">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                  <img src="icone do google.png" alt="Google" class="google-icon" />
+                </div>
+                <p class="testimonial-text google-font">"Eu fui com a perspectiva de ir somente melhorar meu rosto... Foi uma experiência de relaxamento do início ao fim. E meu rosto? Sério, ficou maravilhoso. Ameiiii o atendimento!"</p>
+                <div class="testimonial-author">
+                  <img src="priscilla ferrarezzi.png" alt="Paciente" class="testimonial-img" loading="lazy" />
+                  <div class="author-details">
+                    <p class="author-name google-font-name">Priscilla Ferrarezzi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card google-review">
+                <div class="card-header">
+                  <div class="stars-container">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                  <img src="icone do google.png" alt="Google" class="google-icon" />
+                </div>
+                <p class="testimonial-text google-font">"Uma querida. Fiz limpeza de pele e microagulhamento nos lábios. Mao super leve. Atendimento e anaminese cuidadosos, além de um mimo no final. Voltarei mais vezes, com certeza!"</p>
+                <div class="testimonial-author">
+                  <img src="Elisa Cristina.png" alt="Paciente" class="testimonial-img" loading="lazy" />
+                  <div class="author-details">
+                    <p class="author-name google-font-name">Elisa Cristina</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card google-review">
+                <div class="card-header">
+                  <div class="stars-container">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#fbbc04" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                  <img src="icone do google.png" alt="Google" class="google-icon" />
+                </div>
+                <p class="testimonial-text google-font">"Foi impecável! Muito atenciosa e competente. Entendeu exatamente o que eu desejava, executou tudo com muita maestria e profissionalismo. Eu adorei!"</p>
+                <div class="testimonial-author">
+                  <img src="Mariana Torres Franca Caldeira.png" alt="Paciente" class="testimonial-img" loading="lazy" />
+                  <div class="author-details">
+                    <p class="author-name google-font-name">Mariana Torres Franca Caldeira</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 32px;" data-animate="fade-up">
+        <a href="https://maps.google.com" target="_blank" rel="noopener" style="color: var(--gold-dark); font-weight: bold; text-decoration: underline;">⭐ Veja todas as avaliações no Google</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 7: COMO FUNCIONA ======== -->
+  <section id="processo" class="section section-white">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <h2 class="section-title">Como é o processo <strong>do início ao fim</strong></h2>
+        <div class="gold-divider center"></div>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card" data-animate="fade-up">
+          <div class="step-num" style="font-size: 1.8rem; margin-bottom: 10px;">📋</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">1. Análise de pele gratuita</h3>
+          <p>Avaliamos sua pele, entendemos seus objetivos e montamos um protocolo sob medida pra você.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card" data-animate="fade-up">
+          <div class="step-num" style="font-size: 1.8rem; margin-bottom: 10px;">💉</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">2. Aplicação do bioestimulador</h3>
+          <p>Procedimento seguro, rápido e com mínimo desconforto. Você vai entender cada etapa antes de começar.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card" data-animate="fade-up">
+          <div class="step-num" style="font-size: 1.8rem; margin-bottom: 10px;">📱</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">3. Acompanhamento</h3>
+          <p>No dia seguinte, você recebe meu contato direto pra acompanhar qualquer reação e tirar dúvidas.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card" data-animate="fade-up">
+          <div class="step-num" style="font-size: 1.8rem; margin-bottom: 10px;">✨</div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 12px;">4. Resultado progressivo</h3>
+          <p>Sua pele melhora semana após semana. A maioria das pacientes já nota diferença na primeira sessão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 8: FAQ ======== -->
+  <section id="faq" class="section section-white">
+    <div class="container faq-container">
+      <div class="section-header" data-animate="fade-up">
+        <h2 class="section-title"><strong>Dúvidas</strong> frequentes</h2>
+        <div class="gold-divider center"></div>
+      </div>
+      <div class="faq-list" data-animate="fade-up" style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            "Está fora da minha realidade financeiramente."
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>O investimento no bioestimulador é de R$ 2.200 — e inclui 1 sessão de microagulhamento regenerativo de brinde. O resultado dura até 2 anos, o que representa menos de R$ 100 por mês de pele transformada. Agende sua análise gratuita e entenda se faz sentido pra você.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            "Vou pensar e te falo."
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Faz todo sentido querer pensar com calma — é o seu rosto. Por isso ofereço a análise de pele gratuita antes de qualquer decisão. Você vem, conhece o espaço, tira suas dúvidas e decide sem pressão.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            "Tenho medo de ficar artificial."
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Esse é o procedimento certo pra quem tem esse medo. O bioestimulador não altera traços — ele regenera. O resultado é você, com a pele que você tinha antes.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            "Já fiz depilação a laser em outro lugar e não funcionou."
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Infelizmente é comum. Equipamento, protocolo e avaliação fazem toda a diferença. Na minha clínica, cada protocolo é personalizado — e os resultados são monitorados sessão a sessão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO 9: CTA FINAL ======== -->
+  <section id="cta-final" class="section section-white">
+    <div class="container cta-container" data-animate="fade-up" style="background: var(--white); border-radius: 16px; padding: 60px 30px; text-align: center; border: 1px solid var(--border-rose);">
+      <h2 class="cta-title">Sua pele merece cuidado de verdade.<br/>Não genérico. Não com pressa. O seu.</h2>
+      <p class="cta-desc" style="max-width: 600px; margin: 0 auto 30px auto; color: var(--text);">
+        Agende agora sua análise de pele gratuita e descubra o protocolo ideal para o seu caso.<br/><br/>
+        <strong>Atendimento em Belo Horizonte — bairro Castelo.</strong><br/>
+        Seg–Sex: 07h às 18h | Sáb: 07h às 12h
+      </p>
+      <div class="cta-buttons" style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 12px;">
+        <a id="btn-cta-final-wpp" class="btn btn-primary btn-large" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20an%C3%A1lise%20de%20pele%20gratuita." target="_blank" rel="noopener">
+          <img src="icone do whatsapp.png" alt="WhatsApp" class="btn-wpp-icon icon-white" />
+          Agendar minha análise gratuita pelo WhatsApp
+        </a>
+        <p class="cta-guarantee" style="color: var(--rose-mid); margin-top: 8px;">Sem compromisso. Sem pressão. Só cuidado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer id="footer" class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="Logo Estética .png" alt="Dra. Cristiane Naisa" style="max-height: 65px; object-fit: contain; margin-bottom: 12px;" />
+        <p class="footer-desc">Especialista em estética regenerativa dedicada a revelar a beleza única de cada paciente com segurança, naturalidade e precisão.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#dor">O Tratamento</a></li>
+          <li><a href="#solucao">Bioestimulador</a></li>
+          <li><a href="#autoridade">Sobre a Dra.</a></li>
+          <li><a href="#depoimentos">Resultados</a></li>
+          <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>📍 Belo Horizonte – Bairro Castelo</p>
+        <p>📱 <a href="https://wa.me/5531999999999" target="_blank" rel="noopener">(31) 99999-9999</a></p>
+        <p>📸 <a href="https://instagram.com/" target="_blank" rel="noopener">@dra.cristianenaisa</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Dra. Cristiane Naisa – Todos os direitos reservados.</p>
+        <p class="footer-disclaimer">As fotos apresentadas são meramente ilustrativas. Resultados individuais podem variar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
