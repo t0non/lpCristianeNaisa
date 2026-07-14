@@ -48,9 +48,8 @@
 
 html,
 body {
-  overflow-x: hidden;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 html {
@@ -61,7 +60,7 @@ html {
 body {
   font-family: var(--font-sans);
   color: var(--text);
-  background: var(--white);
+  background: #ffffff !important;
   line-height: 1.7;
 }
 
@@ -287,9 +286,21 @@ ul {
 /* ==========================================
    NAVIGATION MENU
    ========================================== */
+@media (min-width: 992px) {
+  .header-inner {
+    position: relative;
+  }
+  .main-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .main-nav ul {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -346,7 +357,7 @@ ul {
 }
 
 .hero-content {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
 .hero-eyebrow {
@@ -549,7 +560,15 @@ ul {
 }
 
 .about-header     { grid-area: header; padding-top: 10px; }
-.about-image-wrap { grid-area: img; position: relative; align-self: start; }
+.about-image-wrap { 
+  grid-area: img; 
+  position: -webkit-sticky;
+  position: sticky; 
+  top: 120px; 
+  z-index: 10; 
+  align-self: start; 
+  height: max-content;
+}
 .about-body       { grid-area: body; } /* compatibilidade */
 
 .about-img {
@@ -1058,7 +1077,7 @@ ul {
   .hero-inner  { grid-template-columns: 1fr; text-align: center; gap: 0; padding: 0; }
 
   /* TEXTO PRIMEIRO */
-  .hero-content    { order: 1; padding-top: 48px; padding-bottom: 0px; }
+  .hero-content    { order: 1; padding-top: 0px; padding-bottom: 0px; }
 
   /* IMAGEM DEPOIS */
   .hero-image-wrap { order: 2; width: 100%; margin-top: -60px; }
@@ -1102,7 +1121,7 @@ ul {
     gap: 20px;
   }
   .about-header     { order: 1; text-align: left; }
-  .about-image-wrap { order: 2; width: 100%; }
+  .about-image-wrap { order: 2; width: 100%; position: relative !important; }
   .about-body       { order: 3; text-align: left; }
   .about-img        { height: auto; max-height: 400px; width: 100%; object-fit: contain; } /* oculta card flutuante no mobile */
   .about-cta-wrap   { order: 4; }
@@ -1269,7 +1288,6 @@ ul {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  aspect-ratio: 1 / 1;
   max-width: 380px;
   width: 100%;
   margin: 0 auto;
@@ -1283,7 +1301,7 @@ ul {
 
 .service-card-img-wrap {
   width: 100%;
-  height: 130px;
+  height: 180px;
   overflow: hidden;
   position: relative;
 }
@@ -1362,7 +1380,7 @@ ul {
     margin: 0;
   }
   .service-card-img-wrap {
-    height: 200px;
+    height: 260px;
   }
   .service-card-content {
     padding: 24px;
@@ -1428,9 +1446,15 @@ ul {
    ========================================== */
 .diff-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .diff-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .diff-card {
