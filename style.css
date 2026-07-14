@@ -50,7 +50,6 @@ html,
 body {
   width: 100%;
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 html {
@@ -663,10 +662,8 @@ ul {
 /* ── RESULTS SLIDER ─────────────────────── */
 .slider-container {
   margin-top: 50px;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  overflow: hidden;
   overflow: hidden;
   /* display: flex removido para evitar que o track seja comprimido */
 }
