@@ -1119,7 +1119,7 @@ ul {
     gap: 20px;
   }
   .about-header     { order: 1; text-align: left; position: relative; z-index: 2; margin-bottom: 10px; }
-  .about-image-wrap { order: 2; width: 100%; position: relative !important; margin-top: -110px !important; margin-bottom: 80px !important; z-index: 1; }
+  .about-image-wrap { order: 2; width: 100%; position: relative !important; margin-top: -160px !important; margin-bottom: 110px !important; z-index: 1; }
   .about-body       { order: 3; text-align: left; position: relative; z-index: 2; }
   .about-img        { height: auto; max-height: 400px; width: 100%; object-fit: contain; object-position: center top; }
   .about-cta-wrap   { order: 4; }
