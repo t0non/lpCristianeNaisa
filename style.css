@@ -1302,6 +1302,7 @@ ul {
   height: 180px;
   overflow: hidden;
   position: relative;
+  border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
 }
 
 .service-card-img {
