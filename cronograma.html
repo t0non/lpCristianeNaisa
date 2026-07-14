@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronograma de Gerenciamento de Pele | Enf. Cristiane Naísa</title>
+  
+  <style>
+    /* Reaproveitando variáveis do projeto original */
+    :root {
+      --gold: #d4af37;
+      --gold-dark: #aa8c2c;
+      --gold-light: #f3e5ab;
+      --sand: #f4f1ea;
+      --sand-light: #fcfbf9;
+      --rose: #f9ebea;
+      --rose-mid: #d5b8b8;
+      --border-rose: #eedfdf;
+      --text: #4a4a4a;
+      --text-light: #7a7a7a;
+      --heading: #1f1f1f;
+      --white: #ffffff;
+      --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 8px 15px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background-color: var(--sand-light);
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    
+    .cronograma-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      background: var(--white);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-rose);
+    }
+    
+    @media(min-width: 992px) {
+      .cronograma-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 60px;
+      }
+    }
+    
+    .content-left {
+      flex: 1;
+    }
+    
+    .image-right {
+      flex: 0 0 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    @media(min-width: 992px) {
+      .image-right {
+        flex: 0 0 400px;
+        position: sticky;
+        top: 40px;
+      }
+    }
+    
+    .image-right img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow-lg);
+      object-fit: cover;
+    }
+    
+    h1 {
+      color: var(--heading);
+      font-size: 2.2rem;
+      margin-bottom: 32px;
+      line-height: 1.2;
+    }
+    
+    h2 {
+      color: var(--gold-dark);
+      font-size: 1.4rem;
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+    
+    ul {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    
+    ul li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    
+    ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      color: var(--gold);
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    
+    p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+    
+    .btn-voltar {
+      display: inline-block;
+      margin-bottom: 40px;
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    
+    .btn-voltar:hover {
+      color: var(--gold-dark);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html" class="btn-voltar">← Voltar para a página inicial</a>
+    
+    <div class="cronograma-wrapper">
+      <div class="content-left">
+        <h1>Cronograma Gerenciamento de Pele</h1>
+        
+        <h2>Benefícios:</h2>
+        <ul>
+          <li>Previne o envelhecimento precoce, em vez de apenas tratar os sinais já instalados.</li>
+          <li>Mantém a produção de colágeno e a qualidade da pele de forma contínua.</li>
+          <li>Preserva firmeza, luminosidade e hidratação ao longo das estações do ano.</li>
+          <li>Permite protocolos personalizados de acordo com as necessidades de cada fase da vida.</li>
+          <li>Potencializa e prolonga os resultados dos procedimentos realizados.</li>
+          <li>Favorece um rejuvenescimento natural e progressivo, sem excessos.</li>
+          <li>Reduz a necessidade de intervenções mais intensas no futuro.</li>
+          <li>Promove longevidade cutânea, mantendo a pele saudável e funcional.</li>
+          <li>Economiza tempo e investimentos, com um planejamento estratégico e individualizado.</li>
+          <li>Proporciona mais confiança e bem-estar, sabendo que sua pele está sendo cuidada continuamente.</li>
+        </ul>
+        
+        <h2>Vantagens exclusivas para pacientes aderentes do cronograma de gerenciamento de pele:</h2>
+        <p>Ao aderir ao cronograma de gerenciamento da pele e realizar seu primeiro procedimento, você passa a ter acesso a condições especiais e exclusivas em todos os procedimentos indicados ao longo do seu plano de cuidado.</p>
+        <p>Essa é uma forma de tornar o seu tratamento contínuo, acessível e estratégico, permitindo a manutenção do acompanhamento profissional e a construção progressiva de uma pele mais saudável, firme e equilibrada.</p>
+      </div>
+      
+      <div class="image-right">
+        <!-- Usando a foto dela conforme solicitado na imagem -->
+        <img src="imagem_sessao1.png" alt="Enf. Cristiane Naísa" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
