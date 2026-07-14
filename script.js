@@ -476,5 +476,30 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open(`https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(config.initialMessage)}`, '_blank', 'noopener');
   });
 
+  // Image Modal Logic
+  const imageModal = document.getElementById("image-modal");
+  const imageModalImg = document.getElementById("image-modal-img");
+  const imageModalClose = document.getElementById("image-modal-close");
+  const sliderImages = document.querySelectorAll(".slider-img");
+
+  if (imageModal && imageModalImg && imageModalClose) {
+    sliderImages.forEach(img => {
+      img.addEventListener("click", function() {
+        imageModal.classList.add("active");
+        imageModalImg.src = this.src;
+      });
+    });
+
+    imageModalClose.addEventListener("click", function() {
+      imageModal.classList.remove("active");
+    });
+
+    imageModal.addEventListener("click", function(e) {
+      if (e.target === imageModal) {
+        imageModal.classList.remove("active");
+      }
+    });
+  }
+
   console.log('✨ Dra. Cristiane Naisa LP — Floating WhatsApp initialized!');
 });
