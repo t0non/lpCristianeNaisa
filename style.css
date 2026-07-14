@@ -50,6 +50,7 @@ html,
 body {
   width: 100%;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 html {
@@ -309,6 +310,7 @@ ul {
   color: var(--text);
   font-weight: 500;
   transition: color var(--trans);
+  white-space: nowrap;
 }
 
 .main-nav a:hover {
@@ -1369,7 +1371,7 @@ ul {
 @media (min-width: 861px) {
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: stretch;
     max-width: 100%;
